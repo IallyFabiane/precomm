@@ -1,6 +1,6 @@
 Projeto pr'Ecomm
 
--Fazer login
+-Fazer tela login, loja e carrinho
 -Filtro por nome do produto
 -Filtro dor preço máximo
 -Ordernar produto por maior e menor preço
@@ -8,3 +8,9 @@ Projeto pr'Ecomm
 -Excluir produto do carrinho
 -Armazenar produtos do carrinho no localStorage
 -Compra do produto no carrinho
+
+
+Utilização
+
+react-router-dom - Rotas
+styled-components - Para aplicar estilos em js

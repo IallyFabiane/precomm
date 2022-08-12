@@ -9,15 +9,10 @@
 :root {
   --branco--fundo: #f7f4f4;
   --branco: #ffffff;
-  --cinza: #CCCCCC;
+  --cinza-claro: #CCCCCC;
   --preto: #e0e0;
-  --primaria: #B6E2E0;
-  --secundaria: #E9DAC1;
-  --terciaria: #18978F;
-  --quartenaria: dimgray;
-
-}
-
-.fundo {
-  background-color: transparent;
+  --azul-claro: #B6E2E0;
+  --bege: #E9DAC1;
+  --azul-medio: #18978F;
+  --cinza-medio: dimgray;
 }

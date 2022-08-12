@@ -1,12 +1,10 @@
+import Header from 'components/Header';
 import produtos from './produtos.json';
 import Produto from 'components/Produto';
 import Titulo from 'common/Titulo';
 import Ordena from 'components/Ordena';
-import "./ecommerce.css";
 import { useState } from 'react';
-import logotipo from 'assets/logo.svg';
-import { FaUserAlt, FaShoppingCart } from "react-icons/fa";
-// import Header from 'components/Header';
+import "./ecommerce.css";
 
 
 function Ecommerce() {
@@ -14,34 +12,10 @@ function Ecommerce() {
 
     console.log('Renderizou', textoInput);
 
-    const onSubmit = (e) => {
-        e.preventDefault();
-        console.log(e)
-    }
-
     return (
        <>
-       {/* <Header /> */}
-        <header className='cabecalho'>
-            <img src={logotipo} alt="Logotipo da pr'Ecormm" className='cabecalho__logo fundo' />
-            <form onSubmit={onSubmit} className='cabecalho__bloco fundo'>
-                <input
-                    name="input"
-                    value={textoInput}
-                    onChange={e => setTextoInput(e.target.value)}
-                    type="text"
-                    placeholder="Buscar produto..." 
-                    maxLength="25" 
-                    spellCheck 
-                    className='cabecalho__input'
-                />
-                <input type='submit' value="Busca" className='cabecalho__lupa' />
-            </form>
-            <div className='cabecalho__bloco fundo'>
-                <h4 className='cabecalho__nome fundo'>Olá usuário <FaUserAlt className='fundo' /></h4>
-                <button type='button' onClick={textoInput} className='cabecalho__carrinho--ecommerce'><FaShoppingCart className='fundo' /></button>
-            </div>
-        </header>
+       <Header value={textoInput} onChange={e => setTextoInput(e.target.value)} />
+
         <main className='conteudo'>
             <div className='conteudo__filtro'>
                 <div className='conteudo__caixafiltro'>
