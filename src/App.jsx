@@ -1,15 +1,17 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from 'pages/Login';
-import Ecommerce from './pages/Ecommerce';
+import Ecommerce from 'pages/Ecommerce';
 import Carrinho from 'pages/Carrinho';
 
 function App() {
-    return ( 
+    return (
         <BrowserRouter>
-            <Login path="/login" />
-            <Ecommerce exact path="/" />
-            <Carrinho path="/carrinho" />
+            <Routes>
+                <Route path="/" element={<Login />} />
+                <Route path="ecommerce" element={<Ecommerce />} />
+                <Route path="carrinho" element={<Carrinho />} />
+            </Routes>
         </BrowserRouter>
     );
 }

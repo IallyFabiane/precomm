@@ -1,6 +1,6 @@
+import React, { memo } from 'react';
 import Botao from 'common/Botao';
 import Titulo from 'common/Titulo';
-import { memo } from 'react';
 import './produto.css';
 
 function Produto({
@@ -15,7 +15,7 @@ function Produto({
             <Titulo name={nome} />
             <Titulo name={`R$ ${valor?.toFixed(2)}`} />
             <Botao />
-        </div> 
+        </div>
     );
 }
 

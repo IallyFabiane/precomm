@@ -1,9 +1,9 @@
+import React, { useState } from 'react';
 import Header from 'components/Header';
 import produtos from './produtos.json';
 import Produto from 'components/Produto';
 import Titulo from 'common/Titulo';
 import Ordena from 'components/Ordena';
-import { useState } from 'react';
 import "./ecommerce.css";
 
 
@@ -12,18 +12,24 @@ function Ecommerce() {
 
     console.log('Renderizou', textoInput);
 
+    function clickBotao() {
+        console.log("botao");
+    }
+
     return (
        <>
-       <Header value={textoInput} onChange={e => setTextoInput(e.target.value)} />
+        <Header value={textoInput} onChange={e => setTextoInput(e.target.value)} onClick={clickBotao} />
 
         <main className='conteudo'>
             <div className='conteudo__filtro'>
                 <div className='conteudo__caixafiltro'>
                     <Titulo name="Produto" />
-                    <p className='conteudo__descricao'>Colar de Ouro</p>
-                    <p className='conteudo__descricao'>Colar de Prata</p>
-                    <p className='conteudo__descricao'>Colar Único</p>
-                    <p className='conteudo__descricao'>Colar Multiplo</p>
+                    <ul>
+                        <li className='conteudo__descricao'>Colar de Ouro</li>
+                        <li className='conteudo__descricao'>Colar de Prata</li>
+                        <li className='conteudo__descricao'>Colar Único</li>
+                        <li className='conteudo__descricao'>Colar Multiplo</li>
+                    </ul>
                 </div>
                 <div className='conteudo__caixafiltro'>
                     <Titulo name="Preço" />

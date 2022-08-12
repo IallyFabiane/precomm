@@ -1,3 +1,4 @@
+import React from 'react';
 import './ordena.css';
 
 function Ordena() {
