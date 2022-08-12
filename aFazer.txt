@@ -1,0 +1,10 @@
+Projeto pr'Ecomm
+
+-Fazer login
+-Filtro por nome do produto
+-Filtro dor preço máximo
+-Ordernar produto por maior e menor preço
+-Adicionar produto no carrinho
+-Excluir produto do carrinho
+-Armazenar produtos do carrinho no localStorage
+-Compra do produto no carrinho

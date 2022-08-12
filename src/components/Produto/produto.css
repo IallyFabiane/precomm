@@ -1,0 +1,24 @@
+.conteudo__cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2rem;
+    padding: 1rem;
+    margin-bottom: 1.3rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    transition: 400ms;
+}
+
+.conteudo__cartao:hover {
+    transform: scale(1.06);
+}
+
+.conteudo__produto {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+}
+
+

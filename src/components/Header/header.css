@@ -1,0 +1,50 @@
+.cabecalho {
+    height: 90px;
+    background-color: #B6E2E0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+
+.cabecalho__bloco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho__logo {
+    width: 17%;
+}
+
+.cabecalho__input {
+    border: 1px solid white;
+    width: 25rem;
+    border-radius: 10px 0 0 10px;
+    font-size: 1.2rem;
+    padding: .3rem .2rem;
+    background-color: white;
+}
+
+.cabecalho__lupa {
+    border-radius: 0 10px 10px 0;
+    padding: .55rem 1rem;
+    border: 1px solid #E9DAC1;
+    color: #18978F;
+    cursor: pointer;
+    background-color: #E9DAC1;
+}
+
+.cabecalho__nome {
+    font-size: 1.2rem;
+    color: #18978F;
+}
+
+.cabecalho__carrinho--ecommerce {
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    border: 2px solid #E9DAC1;
+    color: #18978F;
+    margin-left: 2rem;
+    cursor: pointer;
+}

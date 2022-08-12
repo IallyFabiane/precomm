@@ -1,0 +1,50 @@
+[
+    {
+      "nome": "Colar ouro pingente único",
+      "imagem": "1",
+      "valor": 9.99,
+      "id": "1"
+    },
+    {
+      "nome": "Colar duplo ouro pingente",
+      "imagem": "2",
+      "valor": 29.99,
+      "id": "2"
+    },
+    {
+      "nome": "Colar prata duplo circulo",
+      "imagem": "3",
+      "valor": 39.99,
+      "id": "3"
+    },
+    {
+      "nome": "Colar ouro ave diamante",
+      "imagem": "4",
+      "valor": 19.99,
+      "id": "4"
+    },
+    {
+      "nome": "Colar ouro flor borboleta",
+      "imagem": "5",
+      "valor": 39.99,
+      "id": "5"
+    },
+    {
+      "nome": "Colar duplo prata pingente",
+      "imagem": "6",
+      "valor": 19.99,
+      "id": "6"
+    },
+    {
+      "nome": "Colar triplo ouro pingente",
+      "imagem": "7",
+      "valor": 9.99,
+      "id": "7"
+    },
+    {
+      "nome": "Colar prata pingentes",
+      "imagem": "8",
+      "valor": 19.99,
+      "id": "8"
+    }
+  ]

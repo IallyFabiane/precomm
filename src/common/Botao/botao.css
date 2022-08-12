@@ -1,0 +1,19 @@
+.conteudo__adicionar {
+    border: 1px solid #C4E8E6;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: .5rem;
+    padding: .55rem 1rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background-color: #C4E8E6;
+    color: #000000;
+    transition: 300ms;
+}
+
+.conteudo__adicionar:hover, 
+.conteudo__adicionar:focus {
+    border: 1px solid #18978F;
+    background-color: #18978F;
+    color: #FFFFFF;
+}
