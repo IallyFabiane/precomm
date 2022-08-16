@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import logotipo from 'assets/logo.svg'
+import logotipo from 'assets/logo.svg';
 import './login.css';
 import  { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -22,32 +22,37 @@ function Login() {
 
     return (
         <>
-        <div>
-            <img src={logotipo} alt="Logotipo da pr'Ecormm" className='cabecalho__logo' />
+        <div className="login">
+            <form className="login__form">
+                <div className="login__img">
+                    <img src={logotipo} alt="Logotipo da pr'Ecormm" className="login__logo" />
+                </div>
+                <label htmlFor='' className="login__label">E-mail</label>
+                <input 
+                    type="text" 
+                    placeholder="nome@email.com" 
+                    maxLength="50"
+                    required 
+                    onChange={handleChange}
+                    className="login__input"
+                />
 
-            <label htmlFor=''>E-mail</label>
-            <input 
-                type="text" 
-                placeholder="nome@email.com" 
-                maxLength="50"
-                required 
-                onChange={handleChange}
-            />
+                <label htmlFor='' className="login__label">Senha</label>
+                <input
+                    type="password" 
+                    placeholder="digite sua senha aqui" 
+                    minLength="8"
+                    required 
+                    onChange={handleChange}
+                    className="login__input"
+                />
 
-            <label htmlFor=''>Senha</label>
-            <input
-                type="password" 
-                placeholder="digite sua senha aqui" 
-                minLength="8"
-                required 
-                onChange={handleChange}
-            />
+                <button type="button" onClick={handleSubmit} className="login__botao">Entrar</button>
 
-            <button type='button' onClick={handleSubmit}>Entrar</button>
+                <p className="login__paragrafo">Não tem conta?</p>
 
-            <p>Não tem conta?</p>
-
-            <button type='button'>Cadastre-se</button>
+                <button type="button" className="login__botao">Cadastre-se</button>
+            </form>
 
         </div>
         </>

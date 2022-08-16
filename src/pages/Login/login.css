@@ -1,0 +1,77 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.login__img {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: center;
+}
+
+.login__logo {
+    width: 240px;
+    margin-bottom: 1.5rem;
+    background-color: var(--branco);
+}
+
+.login__form {
+    max-width: 345px;
+    min-width: 260px;
+    background-color: var(--branco);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid var(--cinza-claro)
+}
+
+.login__label {
+    color: var(--azul-medio);
+    font-weight: bold;
+    background-color: var(--branco);
+}
+
+.login__input {
+    border: 1px solid var(--azul-claro);
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: .5rem .2rem;
+    margin: .2rem 0 1rem 0;
+    background-color: transparent;
+    outline: transparent;
+}
+
+.login__botao {
+    cursor: pointer;
+    background-color: var(--azul-claro);
+    text-align: center;
+    width: 100%;
+    border: 1px solid var(--azul-claro);
+    padding: .5rem .2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    font-weight: bold;
+    transition: 200ms;
+}
+
+.login__botao:hover, 
+.login__botao:focus {
+    border: 1px solid var(--bege-medio);
+    background-color: var(--bege-medio);
+}
+
+.login__botao:active {
+    border: 1px solid var(--bege);
+    background-color: var(--bege);
+}
+
+.login__paragrafo {
+    text-align: center;
+    margin: 1rem auto;
+    background-color: var(--branco);
+}

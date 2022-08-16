@@ -19,6 +19,10 @@
     margin-bottom: 1rem;
 }
 
+.conteudo__checkbox {
+    accent-color: var(--azul-medio);
+}
+
 .conteudo__descricao {
     font-size: .9rem;
     padding-left: 1rem;
@@ -34,7 +38,7 @@
 .conteudo__caixaproduto {
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 0 1px 1px 1px;
 }
