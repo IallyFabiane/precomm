@@ -1,0 +1,75 @@
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.cadastro__img {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro__logo {
+    width: 240px;
+    margin-bottom: 1.5rem;
+    background-color: var(--branco);
+}
+
+.cadastro__form {
+    max-width: 350px;
+    min-width: 260px;
+    background-color: var(--branco);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid var(--cinza-claro)
+}
+
+.cadastro__label {
+    color: var(--azul-medio);
+    font-weight: bold;
+    background-color: var(--branco);
+}
+
+.cadastro__input {
+    border: 1px solid var(--azul-claro);
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: .5rem .2rem;
+    margin: .2rem 0 1rem 0;
+    background-color: transparent;
+    outline: transparent;
+}
+
+.cadastro__input:focus {
+    box-shadow: 0 0 5px 2px var(--azul-medio);
+}
+
+.cadastro__botao {
+    cursor: pointer;
+    background-color: var(--azul-claro);
+    text-align: center;
+    width: 100%;
+    border: 1px solid var(--azul-claro);
+    padding: .5rem .2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    font-weight: bold;
+    transition: 200ms;
+}
+
+.cadastro__botao:hover, 
+.cadastro__botao:focus {
+    border: 1px solid var(--bege-medio);
+    background-color: var(--bege-medio);
+}
+
+.cadastro__botao:active {
+    border: 1px solid var(--bege);
+    background-color: var(--bege);
+}

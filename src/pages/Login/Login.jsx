@@ -20,6 +20,10 @@ function Login() {
        navigate("/Ecommerce");
     };
 
+    function handleRegistration (e) {
+        navigate("/Cadastro");
+    };
+
     return (
         <>
         <div className="login">
@@ -50,7 +54,7 @@ function Login() {
 
                 <p className="login__paragrafo ">Não tem conta?</p>
 
-                <button className="login__botao" type='button'>Cadastre-se</button>
+                <button className="login__botao" type='button' onClick={handleRegistration}>Cadastre-se</button>
 
             </form>
             
