@@ -22,33 +22,38 @@ function Login() {
 
     return (
         <>
-        <div>
-            <img src={logotipo} alt="Logotipo da pr'Ecormm" className='cabecalho__logo' />
+        <div className="login">
+            <form className="login__form">
+                <img src={logotipo} alt="Logotipo da pr'Ecormm" className="login__img login__logo" />
 
-            <label htmlFor=''>E-mail</label>
-            <input 
-                type="text" 
-                placeholder="nome@email.com" 
-                maxLength="50"
-                required 
-                onChange={handleChange}
-            />
+                <label className="login__label" htmlFor=''>E-mail</label>
+                <input 
+                    type="text" 
+                    placeholder="nome@email.com" 
+                    maxLength="50"
+                    className="login__input"
+                    required 
+                    onChange={handleChange}
+                />
+                
+                <label className="login__label" htmlFor=''>Senha</label>
+                <input
+                    type="password" 
+                    placeholder="digite sua senha aqui" 
+                    minLength="8"
+                    className="login__input"
+                    required 
+                    onChange={handleChange}
+                />
 
-            <label htmlFor=''>Senha</label>
-            <input
-                type="password" 
-                placeholder="digite sua senha aqui" 
-                minLength="8"
-                required 
-                onChange={handleChange}
-            />
+                <button className="login__botao" type='button' onClick={handleSubmit}>Entrar</button>
 
-            <button type='button' onClick={handleSubmit}>Entrar</button>
+                <p className="login__paragrafo ">Não tem conta?</p>
 
-            <p>Não tem conta?</p>
+                <button className="login__botao" type='button'>Cadastre-se</button>
 
-            <button type='button'>Cadastre-se</button>
-
+            </form>
+            
         </div>
         </>
     );
