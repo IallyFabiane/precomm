@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable */
 import { useState } from 'react';
 import logotipo from 'assets/logo.svg';
 import { useNavigate } from 'react-router-dom';
@@ -6,6 +6,7 @@ import './cadastro.css';
 
 const Cadastro = () => {
     const [state, setState] = useState('');
+    const [senha, setSenha] = useState('');
     let navigate = useNavigate();
 
     function handleChange (e) { 
@@ -33,6 +34,9 @@ const Cadastro = () => {
                 
                     <label className='cadastro__label'>E-mail</label>
                     <input type="email" id="email" placeholder="usuario@mail.com" className='cadastro__input' onBlur={handleChange} />
+
+                    <label className='cadastro__label'>Senha</label>
+                    <input type="password" id="senha" placeholder="......" className='cadastro__input' onBlur={handleChange} />
                 
                     <label className='cadastro__label'>Telefone</label>
                     <input type="tel" id="telefone" placeholder="(xx) xxxxx - xxxx" className='cadastro__input' onBlur={handleChange} required />
