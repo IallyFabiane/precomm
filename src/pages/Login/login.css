@@ -20,7 +20,11 @@
 }
 
 .login__form {
+<<<<<<< HEAD
     max-width: 350px;
+=======
+    max-width: 345px;
+>>>>>>> f1abbdf8e11be4fd290c942df0b2928cc7b5ce18
     min-width: 260px;
     background-color: var(--branco);
     padding: 2rem;
@@ -45,10 +49,13 @@
     outline: transparent;
 }
 
+<<<<<<< HEAD
 .login__input:focus {
     box-shadow: 0 0 5px 2px var(--azul-medio);
 }
 
+=======
+>>>>>>> f1abbdf8e11be4fd290c942df0b2928cc7b5ce18
 .login__botao {
     cursor: pointer;
     background-color: var(--azul-claro);

@@ -15,7 +15,7 @@
 }
 
 .cabecalho__logo {
-    width: 17%;
+    width: 240px;
     background-color: transparent;
 }
 
@@ -26,6 +26,7 @@
     font-size: 1.2rem;
     padding: .3rem .2rem;
     background-color: var(--branco);
+    outline: transparent;
 }
 
 .cabecalho__lupa {
@@ -36,6 +37,11 @@
     cursor: pointer;
     background-color: var(--bege);
     font-weight: bold;
+}
+
+.cabecalho__lupa:active {
+    background-color: var(--bege-medio);
+    border: 1px solid var(--bege-medio);
 }
 
 .cabecalho__nome {
@@ -55,4 +61,8 @@
     color: var(--azul-medio);
     margin-left: 2rem;
     cursor: pointer;
+}
+
+.cabecalho__carrinho--ecommerce:active {
+    background-color: var(--bege);
 }
